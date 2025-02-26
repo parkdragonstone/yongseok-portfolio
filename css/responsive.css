@@ -1,0 +1,100 @@
+/* Tablet */
+@media (max-width: 768px) {
+    .nav-content {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .nav-links {
+        margin-top: 1rem;
+    }
+
+    #home h1 {
+        font-size: 2.5rem;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    #home h1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+} 
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .profile-image {
+        flex: 0 0 auto;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .history-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .history-title {
+        font-size: 2rem;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .history-card {
+        padding: 1.5rem;
+    }
+
+    .company {
+        font-size: 1.2rem;
+    }
+
+    .details p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Add fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation */
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

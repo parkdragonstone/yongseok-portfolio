@@ -58,7 +58,7 @@ body {
     display: flex;
     align-items: center;
     position: relative; /* 포지션 설정 */
-    background-image: url('https://github.com/parkdragonstone/yongseok-portfolio/blob/master/assets/Images/home.jpg');
+    background-image: url('https://raw.githubusercontent.com/parkdragonstone/yongseok-portfolio/master/assets/Images/home.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

@@ -1,3 +1,56 @@
+// Hamburger menu toggle function
+function initHamburgerMenu() {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    
+    if (!menuToggle || !navLinks) {
+        // 요소가 아직 로드되지 않았다면 잠시 후 다시 시도
+        setTimeout(initHamburgerMenu, 100);
+        return;
+    }
+    
+    // 클릭 이벤트 리스너 추가
+    menuToggle.addEventListener('click', function(e) {
+        e.preventDefault();
+        e.stopPropagation();
+        
+        // active 클래스 토글
+        navLinks.classList.toggle('active');
+        
+        // 아이콘 변경 (햄버거 ↔ X)
+        const icon = menuToggle.querySelector('i');
+        if (icon) {
+            if (navLinks.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        }
+    });
+
+    // 메뉴 링크 클릭 시 모바일 메뉴 닫기
+    navLinks.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function() {
+            navLinks.classList.remove('active');
+            const icon = menuToggle.querySelector('i');
+            if (icon) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    });
+}
+
+// DOM이 로드되면 햄버거 메뉴 초기화
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initHamburgerMenu);
+} else {
+    // DOM이 이미 로드된 경우 즉시 실행
+    initHamburgerMenu();
+}
+
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {

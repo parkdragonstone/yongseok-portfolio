@@ -137,7 +137,7 @@ function getProjectData(projectId) {
             features: [
                 'Computer Vision',
                 '측정 도구  : 2대 이상의 카메라',
-                'Workflow : Camera Calibration ➡️ Pose Estimation ➡️ DLT ➡️ Filtering ➡️ MarkerAgumentation ➡️ Kinematics'
+                'Workflow : Camera Calibration, Pose Estimation, DLT, Filtering, MarkerAgumentation, Kinematics'
             ],
             environment: {
                 '언어': 'Python'

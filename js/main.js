@@ -129,7 +129,7 @@ function showProjectDetails(projectId) {
 function getProjectData(projectId) {
     // 이 부분은 실제 프로젝트 데이터로 채우시면 됩니다
     const projectsData = {
-        'pose3danalysis' {
+        'pose3danalysis' : {
             title: 'Pose 3D Analysis',
             site: '',
             codeUrl: 'https://github.com/parkdragonstone/Pose3DAnalysis',
@@ -137,7 +137,7 @@ function getProjectData(projectId) {
             features: [
                 'Computer Vision',
                 '측정 도구  : 2대 이상의 카메라',
-                'Workflow : Camera Calibration, Pose Estimation, DLT, Filtering, MarkerAgumentation, Kinematics'
+                'Workflow : Camera Calibration ➡️ Pose Estimation ➡️ DLT ➡️ Filtering ➡️ MarkerAgumentation ➡️ Kinematics'
             ],
             environment: {
                 '언어': 'Python'

@@ -133,10 +133,11 @@ function getProjectData(projectId) {
             title: 'Pose 3D Analysis',
             site: '',
             codeUrl: 'https://github.com/parkdragonstone/Pose3DAnalysis',
-            overview: 'Pose Estimation과 여러 카메라 정보를 기반으로 DLT 후 3차원 관절각도 계산',
+            overview: 'Pose Estimation 과 여러 카메라 정보를 기반으로 DLT 후 3차원 관절각도 계산',
             features: [
+                'Computer Vision',
                 '측정 도구  : 2대 이상의 카메라',
-                'Workflow : Camera Calibration -> Pose Estimation -> DLT -> Filtering -> MarkerAgumentation -> Kinematics'
+                'Workflow : Camera Calibration ➡️ Pose Estimation ➡️ DLT ➡️ Filtering ➡️ MarkerAgumentation ➡️ Kinematics'
             ],
             environment: {
                 '언어': 'Python'

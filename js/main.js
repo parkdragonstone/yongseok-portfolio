@@ -129,6 +129,19 @@ function showProjectDetails(projectId) {
 function getProjectData(projectId) {
     // 이 부분은 실제 프로젝트 데이터로 채우시면 됩니다
     const projectsData = {
+        'pose3danalysis' {
+            title: 'Pose 3D Analysis',
+            site: '',
+            codeUrl: 'https://github.com/parkdragonstone/Pose3DAnalysis',
+            overview: 'Pose Estimation과 여러 카메라 정보를 기반으로 DLT 후 3차원 관절각도 계산',
+            features: [
+                '측정 도구  : 2대 이상의 카메라',
+                'Workflow : Camera Calibration -> Pose Estimation -> DLT -> Filtering -> MarkerAgumentation -> Kinematics'
+            ],
+            environment: {
+                '언어': 'Python'
+            }
+        },
         'bike-emg': {
             title: 'Bike (EMG)',
             site: '',
